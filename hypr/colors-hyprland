@@ -1,4 +1,4 @@
-$wallpaper = /home/dusha/wallpapers/walls/stray.jpg
+$wallpaper = /home/dusha/wallpapers/stray.jpg
 
 $foreground = rgba(196,193,195,1.0)
 $background = rgba(20,8,16,1.0)
