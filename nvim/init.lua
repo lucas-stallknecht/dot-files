@@ -126,10 +126,8 @@ require('lazy').setup('plugins', {
   },
 })
 
-vim.opt.shiftwidth = 4
-vim.opt.tabstop = 4
 vim.opt.colorcolumn = '80'
 vim.keymap.set('n', '<leader><tab>', '<cmd>e#<CR>', { desc = 'Open last [Tab]' })
 
 -- The line beneath this is called `modeline`. See `:help modeline`
--- vim: ts=2 sts=2 sw=2 et
+-- vim: ts=4 sts=4 sw=4 et
