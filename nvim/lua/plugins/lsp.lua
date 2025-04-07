@@ -1,3 +1,5 @@
+local diagnostic_float_win = false
+
 return {
   -- LSP Plugins
   {
@@ -109,6 +111,11 @@ return {
           --  For example, in C this would take you to the header.
           map('gD', vim.lsp.buf.declaration, '[G]oto [D]eclaration')
 
+          -- Function to toggle floating diagnostics
+          map('<leader>tf', function()
+            diagnostic_float_win = not diagnostic_float_win
+          end, '[T]oggle [F]floating diagnostics')
+
           -- This function resolves a difference between neovim nightly (version 0.11) and stable (version 0.10)
           ---@param client vim.lsp.Client
           ---@param method vim.lsp.protocol.Method
@@ -133,7 +140,12 @@ return {
             vim.api.nvim_create_autocmd({ 'CursorHold', 'CursorHoldI' }, {
               buffer = event.buf,
               group = highlight_augroup,
-              callback = vim.lsp.buf.document_highlight,
+              callback = function()
+                if diagnostic_float_win then
+                  vim.diagnostic.open_float(nil, { focus = false })
+                end
+                vim.lsp.buf.document_highlight()
+              end,
             })
 
             vim.api.nvim_create_autocmd({ 'CursorMoved', 'CursorMovedI' }, {
