@@ -3,7 +3,7 @@
 - Kitty theme : Arthur, using `kitten`
 - Nerd font : Hermit
 - GTK theme : Materia `nwg-look`
-- Monitor default : `, preffered, auto, 1`
+- Monitor default : `, preferred, auto, 1`
 - Make fish the default shell : `chsh -s /usr/bin/fish`
 
 Install : 
