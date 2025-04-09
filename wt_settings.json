@@ -1,0 +1,258 @@
+{
+    "$help": "https://aka.ms/terminal-documentation",
+    "$schema": "https://aka.ms/terminal-profiles-schema",
+    "actions": 
+    [
+        {
+            "command": 
+            {
+                "action": "movePane",
+                "index": 0
+            },
+            "id": "User.movePane.90CDC17E"
+        },
+        {
+            "command": 
+            {
+                "action": "movePane",
+                "index": 1
+            },
+            "id": "User.movePane.EA17F97A"
+        },
+        {
+            "command": 
+            {
+                "action": "movePane",
+                "index": 2
+            },
+            "id": "User.movePane.B01DF59A"
+        },
+        {
+            "command": 
+            {
+                "action": "swapPane",
+                "direction": "right"
+            },
+            "id": "User.swapPane.87C324ED"
+        },
+        {
+            "command": 
+            {
+                "action": "swapPane",
+                "direction": "left"
+            },
+            "id": "User.swapPane.2A0DA8E0"
+        },
+        {
+            "command": 
+            {
+                "action": "swapPane",
+                "direction": "up"
+            },
+            "id": "User.swapPane.6CD791B"
+        },
+        {
+            "command": 
+            {
+                "action": "moveFocus",
+                "direction": "up"
+            },
+            "id": "User.moveFocus.6CD791B"
+        },
+        {
+            "command": 
+            {
+                "action": "swapPane",
+                "direction": "down"
+            },
+            "id": "User.swapPane.F747588A"
+        },
+        {
+            "command": "closePane",
+            "id": "User.closePane"
+        },
+        {
+            "command": 
+            {
+                "action": "splitPane"
+            },
+            "id": "User.splitPane.91AB55B1"
+        },
+        {
+            "command": 
+            {
+                "action": "openSettings",
+                "target": "settingsUI"
+            },
+            "id": "User.openSettings.6CD791B"
+        }
+    ],
+    "alwaysShowTabs": true,
+    "centerOnLaunch": true,
+    "copyFormatting": "none",
+    "copyOnSelect": false,
+    "defaultProfile": "{4f5230c2-3b83-5223-9ace-d5a3bf9793d3}",
+    "firstWindowPreference": "defaultProfile",
+    "keybindings": 
+    [
+        {
+            "id": "User.swapPane.87C324ED",
+            "keys": "alt+right"
+        },
+        {
+            "id": "User.movePane.90CDC17E",
+            "keys": "alt+shift+8"
+        },
+        {
+            "id": "User.swapPane.F747588A",
+            "keys": "alt+down"
+        },
+        {
+            "id": "User.openSettings.6CD791B",
+            "keys": "ctrl+shift+comma"
+        },
+        {
+            "id": "Terminal.MoveFocusLeft",
+            "keys": "alt+h"
+        },
+        {
+            "id": "User.swapPane.2A0DA8E0",
+            "keys": "alt+left"
+        },
+        {
+            "id": "Terminal.MoveFocusRight",
+            "keys": "alt+l"
+        },
+        {
+            "id": "User.closePane",
+            "keys": "alt+q"
+        },
+        {
+            "id": "User.swapPane.6CD791B",
+            "keys": "alt+up"
+        },
+        {
+            "id": "Terminal.MoveFocusDown",
+            "keys": "alt+j"
+        },
+        {
+            "id": "User.movePane.EA17F97A",
+            "keys": "alt+shift+9"
+        },
+        {
+            "id": "User.movePane.B01DF59A",
+            "keys": "alt+shift+0"
+        },
+        {
+            "id": "User.splitPane.91AB55B1",
+            "keys": "alt+enter"
+        },
+        {
+            "id": "User.moveFocus.6CD791B",
+            "keys": "alt+k"
+        },
+        {
+            "id": "Terminal.SwitchToTab0",
+            "keys": "alt+7"
+        },
+        {
+            "id": "Terminal.SwitchToTab1",
+            "keys": "alt+8"
+        },
+        {
+            "id": "Terminal.SwitchToTab2",
+            "keys": "alt+9"
+        }
+    ],
+    "language": "en-US",
+    "launchMode": "maximized",
+    "newTabMenu": 
+    [
+        {
+            "type": "remainingProfiles"
+        }
+    ],
+    "profiles": 
+    {
+        "defaults": 
+        {
+            "colorScheme": "One Half Dark"
+        },
+        "list": 
+        [
+            {
+                "commandline": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+                "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+                "hidden": false,
+                "name": "Windows PowerShell"
+            },
+            {
+                "commandline": "%SystemRoot%\\System32\\cmd.exe",
+                "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
+                "hidden": false,
+                "name": "Command Prompt"
+            },
+            {
+                "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
+                "hidden": false,
+                "name": "Azure Cloud Shell",
+                "source": "Windows.Terminal.Azure"
+            },
+            {
+                "altGrAliasing": false,
+                "bellStyle": "none",
+                "colorScheme": "Arthur",
+                "cursorShape": "bar",
+                "font": 
+                {
+                    "face": "Hurmit Nerd Font",
+                    "size": 12
+                },
+                "guid": "{4f5230c2-3b83-5223-9ace-d5a3bf9793d3}",
+                "hidden": false,
+                "name": "Ubuntu - Main",
+                "opacity": 80,
+                "padding": "12",
+                "scrollbarState": "hidden",
+                "source": "Microsoft.WSL",
+                "tabTitle": "Main",
+                "useAcrylic": true,
+				"unfocusedAppearance": {
+					"opacity": 50,
+					"useAcrylic": true
+				},
+            },
+        ]
+    },
+    "schemes": 
+    [
+        {
+            "background": "#1C1C1C",
+            "black": "#3D352A",
+            "blue": "#6495ED",
+            "brightBlack": "#554444",
+            "brightBlue": "#87CEEB",
+            "brightCyan": "#B0C4DE",
+            "brightGreen": "#88AA22",
+            "brightPurple": "#996600",
+            "brightRed": "#CC5533",
+            "brightWhite": "#DDCCBB",
+            "brightYellow": "#FFA75D",
+            "cursorColor": "#E2BBEF",
+            "cyan": "#B0C4DE",
+            "foreground": "#DDEEDD",
+            "green": "#86AF80",
+            "name": "Arthur",
+            "purple": "#DEB887",
+            "red": "#CD5C5C",
+            "selectionBackground": "#4D4D4D",
+            "white": "#BBAA99",
+            "yellow": "#E8AE5B"
+        }
+    ],
+    "showTabsInTitlebar": true,
+    "startupActions": "new-tab -p \"Ubuntu - Main\" --title \"Vim\" --tabColor \"#CC5533\";",
+    "tabWidthMode": "equal",
+    "themes": [],
+    "useAcrylicInTabRow": false
+}
